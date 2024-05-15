@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rancho el paraiso</title>
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <style>
+        .center-screen {
+            min-height: calc(100vh - 8rem); /* Adjust based on header and footer height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Added to align children vertically */
+            max-width: 768px; /* Estableciendo el ancho máximo del contenedor */
+            width: 100%; /* Ajustando el ancho al 100% */
+            margin: 0 auto; /* Centrando horizontalmente */
+        }
+        .header-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2rem; /* Added margin for spacing */
+        }
+        .title-container {
+            display: flex;
+            align-items: left; /* Updated to align items horizontally */
+        }
+        .title-container h1 {
+            margin-right: 2rem; /* Added margin for spacing */
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-container img {
+            width: 40%; /* Definiendo el ancho del 40% */
+            height: auto; /* Para mantener la relación de aspecto */
+            margin: 10px; /* Añadiendo margen entre las imágenes */
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-fuchsia-700 text-white p-4 flex justify-between items-center"> <!-- Cambiando el color a fucsia -->
+        <div>
+          <h1 class="text-3xl">Rancho el paraiso </h1>
+        </div>
+
+        <div>
+            <a href="index4.html" class="text-white hover:text-gray-300">Cerrar sesion</a>
+          </div>
+      </header>
+      
+      <main class="center-screen container mx-auto p-4">
+        <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
+            <h2 class="text-2xl font-bold mb-4"> <strong> En el mundo de vacas existen dos tipos de vacas</strong> </h2>
+            <div class="img-container"> <!-- Contenedor de imágenes -->
+                <img src="vaca.jpg" alt="Descripción de la primera imagen">
+                <img src="vaco.jpg" alt="Descripción de la segunda imagen">
+            </div>
+            <p class="text-gray-700"> <strong> Vaca </strong></p>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p class="text-gray-700"> <strong> Vaco </strong></p>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+        </div>
+    </main>
+    
+    <footer class="bg-fuchsia-700 text-white flex justify-center items-center py-4"> <!-- Cambiando el color a fucsia -->
+        <p>© 2024 - Rancho El Paraiso,Todos los derechos reservados </p>
+    </footer>
+</body>
+</html>
